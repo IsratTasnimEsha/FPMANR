@@ -176,8 +176,8 @@ Data handling: EMNIST images are normalised with mean 0.1307 and standard deviat
 ## Installation
 
 ```bash
-git clone https://github.com/IsratTasnimEsha/FPMANR.git
-cd FPMANR
+git clone https://github.com/IsratTasnimEsha/<repository-name>.git
+cd <repository-name>
 
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
@@ -230,11 +230,15 @@ All notebooks are stored without outputs to keep the repository small. The resul
 
 ## Authors and Affiliation
 
-| Author | Affiliation |
-| ------ | ----------- |
-| Israt Tasnim Esha | Department of Computer Science and Engineering, University of Brahmanbaria, Brahmanbaria, Bangladesh |
+**Israt Tasnim Esha<sup>a,\*</sup>, Dola Das<sup>b</sup>, Nusrat Jahan Jonaki<sup>c</sup>**
 
-*Add co-authors here once the author list is final.*
+<sup>a</sup> Department of Computer Science and Engineering (CSE), University of Brahmanbaria (UoB), Datiara, Brahmanbaria-3400, Bangladesh.
+
+<sup>b</sup> Department of Computer Science and Engineering (CSE), Khulna University of Engineering & Technology (KUET), Khulna-9203, Bangladesh.
+
+<sup>c</sup> Department of Computer Science and Engineering (CSE), Southeast University (SEU), Tejgaon, Dhaka-1208, Bangladesh.
+
+<sup>\*</sup> Corresponding author: israttasnimesha1046@gmail.com
 
 ---
 
