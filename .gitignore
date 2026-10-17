@@ -1,0 +1,23 @@
+# Datasets downloaded by torchvision
+data/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+
+# Word and temporary files
+~$*
+~WRL*.tmp
+*.tmp
+
+# Keep unpublished manuscript files out of this repository
+*.docx
+Journal/
+Draft Copies/

@@ -1,0 +1,84 @@
+Device: cpu
+
+Preparing randomized samples...
+Done.
+
+================================================
+RUNNING MEMBERSHIP INFERENCE ATTACK
+================================================
+
+MODEL: FP
+Confidence AUC: 0.5033
+Loss AUC: 0.5057
+Entropy AUC: 0.5027
+Attack Accuracy: 48.60%
+
+MODEL: FPM
+Confidence AUC: 0.5041
+Loss AUC: 0.5059
+Entropy AUC: 0.5033
+Attack Accuracy: 49.20%
+
+MODEL: FPMANR 0.1
+Confidence AUC: 0.4936
+Loss AUC: 0.4955
+Entropy AUC: 0.4931
+Attack Accuracy: 50.05%
+
+MODEL: FPMANR 0.2
+Confidence AUC: 0.4947
+Loss AUC: 0.4858
+Entropy AUC: 0.4927
+Attack Accuracy: 49.45%
+
+Generating confidence ROC curves...
+
+<Figure size 700x550 with 1 Axes>
+Generating loss ROC curves...
+
+<Figure size 700x550 with 1 Axes>
+Generating entropy ROC curves...
+
+<Figure size 700x550 with 1 Axes>
+
+================================================
+FINAL MEMBERSHIP INFERENCE RESULTS
+================================================
+
+MODEL: FP
+Confidence AUC: 0.5033
+Loss AUC: 0.5057
+Entropy AUC: 0.5027
+Attack Accuracy: 48.60%
+
+MODEL: FPM
+Confidence AUC: 0.5041
+Loss AUC: 0.5059
+Entropy AUC: 0.5033
+Attack Accuracy: 49.20%
+
+MODEL: FPMANR 0.1
+Confidence AUC: 0.4936
+Loss AUC: 0.4955
+Entropy AUC: 0.4931
+Attack Accuracy: 50.05%
+
+MODEL: FPMANR 0.2
+Confidence AUC: 0.4947
+Loss AUC: 0.4858
+Entropy AUC: 0.4927
+Attack Accuracy: 49.45%
+
+================================================
+MIA EXPERIMENT FINISHED
+================================================
+
+Downloading figures...
+
+<IPython.core.display.Javascript object>
+<IPython.core.display.Javascript object>
+<IPython.core.display.Javascript object>
+<IPython.core.display.Javascript object>
+<IPython.core.display.Javascript object>
+<IPython.core.display.Javascript object>
+Done.

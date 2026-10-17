@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "FPMANR: Stable, Privacy-Preserving, and Attack-Resistant Federated Learning under Non-IID Data"
+type: software
+authors:
+  - family-names: "Esha"
+    given-names: "Israt Tasnim"
+    email: "israttasnimesha1046@gmail.com"
+    affiliation: "Department of Computer Science and Engineering, University of Brahmanbaria, Bangladesh"
+license: MIT
+keywords:
+  - federated learning
+  - differential privacy
+  - secure aggregation
+  - non-IID data
+references:
+  - type: conference-paper
+    title: "FPMAN: A Framework for Stable and Privacy-Preserving Federated Learning under Non-IID Data"
+    authors:
+      - family-names: "Esha"
+        given-names: "Israt Tasnim"
+      - family-names: "Tasnim"
+        given-names: "Tasfia"
+      - family-names: "Das"
+        given-names: "Dola"
+    collection-title: "2026 International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure (PECCII)"
+    year: 2026
+    doi: "10.1109/PECCII70991.2026.11662022"
