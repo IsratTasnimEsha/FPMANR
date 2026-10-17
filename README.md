@@ -52,8 +52,6 @@ This repository contains the code, results and trained checkpoints for the FPMAN
 | **FPMANR 0.1** | FedProx + masking + adaptive noise + recovery | 0.1 | `M_1` |
 | **FPMANR 0.2** | FedProx + masking + adaptive noise + recovery | 0.2 | `M_2` |
 
-**Notation.** Throughout this repository, **alpha** is the adaptive noise factor (ANF) and **beta** is the Dirichlet concentration parameter of the data partition, as in the manuscript.
-
 ---
 
 ## Framework
