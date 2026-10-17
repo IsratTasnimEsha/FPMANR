@@ -6,7 +6,13 @@ authors:
   - family-names: "Esha"
     given-names: "Israt Tasnim"
     email: "israttasnimesha1046@gmail.com"
-    affiliation: "Department of Computer Science and Engineering, University of Brahmanbaria, Bangladesh"
+    affiliation: "Department of Computer Science and Engineering (CSE), University of Brahmanbaria (UoB), Bangladesh"
+  - family-names: "Das"
+    given-names: "Dola"
+    affiliation: "Department of Computer Science and Engineering (CSE), Khulna University of Engineering & Technology (KUET), Bangladesh"
+  - family-names: "Jonaki"
+    given-names: "Nusrat Jahan"
+    affiliation: "Department of Computer Science and Engineering (CSE), Southeast University (SEU), Bangladesh"
 license: MIT
 keywords:
   - federated learning
