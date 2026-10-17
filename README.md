@@ -176,8 +176,8 @@ Data handling: EMNIST images are normalised with mean 0.1307 and standard deviat
 ## Installation
 
 ```bash
-git clone https://github.com/IsratTasnimEsha/<repository-name>.git
-cd <repository-name>
+git clone https://github.com/IsratTasnimEsha/FPMANR.git
+cd FPMANR
 
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
