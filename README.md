@@ -2,7 +2,7 @@
 
 **FedProx + pairwise Masking + Adaptive Noise + Recovery for federated image classification on EMNIST Digits, EMNIST Letters and Fashion-MNIST**
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Python](https://img.shields.io/badge/Python-3-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Implemented-orange)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Paper-in%20preparation-lightgrey)
@@ -115,37 +115,37 @@ FPMANR/
 
 | Path | Description |
 | ---- | ----------- |
-| `notebooks/<dataset>/methods/` | Federated training for FP, FPM, FPMANR 0.1 and FPMANR 0.2 (non-IID, alpha = 0.1) |
-| `notebooks/<dataset>/algorithms/` | FPMANR trained with FedAvg and FedSGD aggregation, for the algorithm comparison |
-| `notebooks/<dataset>/distributions/` | FPMANR trained on IID and alpha = 0.5 partitions, for the non-IID comparison |
-| `notebooks/<dataset>/attacks/` | Gradient reconstruction (DLG, iDLG, GradInv) and membership inference against the saved checkpoints |
-| `notebooks/<dataset>/plots/` | Plotting notebooks for the method, algorithm, non-IID and dropout graphs |
+| `notebooks/{emnist_digits,emnist_letters,fmnist}/methods/` | Federated training for FP, FPM, FPMANR 0.1 and FPMANR 0.2 (non-IID, alpha = 0.1) |
+| `notebooks/{emnist_digits,emnist_letters,fmnist}/algorithms/` | FPMANR trained with FedAvg and FedSGD aggregation, for the algorithm comparison |
+| `notebooks/{emnist_digits,emnist_letters,fmnist}/distributions/` | FPMANR trained on IID and alpha = 0.5 partitions, for the non-IID comparison |
+| `notebooks/{emnist_digits,emnist_letters,fmnist}/attacks/` | Gradient reconstruction (DLG, iDLG, GradInv) and membership inference against the saved checkpoints |
+| `notebooks/{emnist_digits,emnist_letters,fmnist}/plots/` | Plotting notebooks for the method, algorithm, non-IID and dropout graphs |
 | `notebooks/client_dropout/` | Client dropout and mask-recovery experiment |
-| `results/<dataset>/csv/` | Round-by-round accuracy, loss and time for each run |
-| `results/<dataset>/figures/` | Figures produced from the CSVs and attack notebooks |
-| `results/<dataset>/logs/` | Text output of the attack notebooks (metrics printed during the runs) |
-| `checkpoints/<dataset>/` | Trained global models (about 3 MB each) |
+| `results/*/csv/` | Round-by-round accuracy, loss and time for each run |
+| `results/*/figures/` | Figures produced from the CSVs and attack notebooks |
+| `results/*/logs/` | Text output of the attack notebooks (metrics printed during the runs) |
+| `checkpoints/*/` | Trained global models (about 3 MB each) |
 
 ### Which notebook writes which file
 
-| Notebook | CSV written (`results/<dataset>/csv/`) | Checkpoint |
+| Notebook | CSV written (`results/*/csv/`) | Checkpoint |
 | -------- | -------------------------------------- | ---------- |
-| `methods/01_fp` | `<DATASET>_fedprox_federated_metrics_0.csv` | `fp.pth` |
-| `methods/02_fpm` | `<DATASET>_masking_federated_metrics_0.csv` | `fpm.pth` |
-| `methods/03_fpmanr_0.1` | `<DATASET>_masking_federated_metrics_1.csv` | `fpmanr_0.1.pth` |
-| `methods/04_fpmanr_0.2` | `<DATASET>_masking_federated_metrics_2.csv` | `fpmanr_0.2.pth` |
-| `algorithms/fpmanr_0.1_fedavg` / `_fedsgd` | `<DATASET>_masking_federated_metrics_1_fedavg.csv` / `_fedsgd.csv` | |
-| `algorithms/fpmanr_0.2_fedavg` / `_fedsgd` | `<DATASET>_masking_federated_metrics_2_fedavg.csv` / `_fedsgd.csv` | |
-| `distributions/fpmanr_0.1_iid` / `_mid` | `IID_<DATASET>_masking_federated_metrics_1.csv` / `Mid_<DATASET>_masking_federated_metrics_1.csv` | |
-| `distributions/fpmanr_0.2_iid` / `_mid` | `IID_<DATASET>_masking_federated_metrics_2.csv` / `Mid_<DATASET>_masking_federated_metrics_2.csv` | |
+| `methods/01_fp` | `{EMNIST_Digits,EMNIST_Letters,FMNIST}_fedprox_federated_metrics_0.csv` | `fp.pth` |
+| `methods/02_fpm` | `{EMNIST_Digits,EMNIST_Letters,FMNIST}_masking_federated_metrics_0.csv` | `fpm.pth` |
+| `methods/03_fpmanr_0.1` | `{EMNIST_Digits,EMNIST_Letters,FMNIST}_masking_federated_metrics_1.csv` | `fpmanr_0.1.pth` |
+| `methods/04_fpmanr_0.2` | `{EMNIST_Digits,EMNIST_Letters,FMNIST}_masking_federated_metrics_2.csv` | `fpmanr_0.2.pth` |
+| `algorithms/fpmanr_0.1_fedavg` / `_fedsgd` | `{EMNIST_Digits,EMNIST_Letters,FMNIST}_masking_federated_metrics_1_fedavg.csv` / `_fedsgd.csv` | |
+| `algorithms/fpmanr_0.2_fedavg` / `_fedsgd` | `{EMNIST_Digits,EMNIST_Letters,FMNIST}_masking_federated_metrics_2_fedavg.csv` / `_fedsgd.csv` | |
+| `distributions/fpmanr_0.1_iid` / `_mid` | `IID_{EMNIST_Digits,EMNIST_Letters,FMNIST}_masking_federated_metrics_1.csv` / `Mid_{EMNIST_Digits,EMNIST_Letters,FMNIST}_masking_federated_metrics_1.csv` | |
+| `distributions/fpmanr_0.2_iid` / `_mid` | `IID_{EMNIST_Digits,EMNIST_Letters,FMNIST}_masking_federated_metrics_2.csv` / `Mid_{EMNIST_Digits,EMNIST_Letters,FMNIST}_masking_federated_metrics_2.csv` | |
 
-`<DATASET>` is `EMNIST_Digits`, `EMNIST_Letters` or `FMNIST`.
+The file-name prefix is `EMNIST_Digits`, `EMNIST_Letters` or `FMNIST`, depending on the dataset.
 
 ---
 
 ## Key Results
 
-Final-round test accuracy (%) after 60 rounds, non-IID with alpha = 0.1, computed from the CSV files in `results/<dataset>/csv/`:
+Final-round test accuracy (%) after 60 rounds, non-IID with alpha = 0.1, computed from the CSV files in `results/*/csv/`:
 
 | Method | EMNIST Digits | EMNIST Letters | Fashion-MNIST |
 | ------ | ------------- | -------------- | ------------- |
@@ -157,7 +157,7 @@ Final-round test accuracy (%) after 60 rounds, non-IID with alpha = 0.1, compute
 - On **EMNIST Digits** every method stays above 96%, and FPMANR 0.1 loses almost nothing compared with FP.
 - Adding more noise costs accuracy: FPMANR 0.2 is clearly lower than FPMANR 0.1 on EMNIST Letters.
 - Fashion-MNIST accuracy fluctuates from round to round under alpha = 0.1, so the last-round value is lower than the best round. The full curves are in `results/fmnist/figures/methods/`.
-- Attack results (reconstruction quality and membership-inference AUC) are in `results/<dataset>/figures/` and `results/<dataset>/logs/`.
+- Attack results (reconstruction quality and membership-inference AUC) are in `results/*/figures/` and `results/*/logs/`.
 
 ---
 
@@ -176,8 +176,8 @@ Data handling: EMNIST images are normalised with mean 0.1307 and standard deviat
 ## Installation
 
 ```bash
-git clone https://github.com/IsratTasnimEsha/<repository-name>.git
-cd <repository-name>
+git clone https://github.com/IsratTasnimEsha/FPMANR.git
+cd FPMANR
 
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
@@ -201,7 +201,7 @@ The experiments are Jupyter notebooks written for **Google Colab**. Some cells c
 1. **Train the four methods** for a dataset, in the order given by the file names:
    `notebooks/emnist_digits/methods/01_fp.ipynb` to `04_fpmanr_0.2.ipynb`.
 2. **Optional comparisons:** run the notebooks in `algorithms/` (FedAvg, FedSGD) and `distributions/` (IID, alpha = 0.5).
-3. **Move outputs into place:** put the CSV files in `results/<dataset>/csv/` and the `.pth` files in `checkpoints/<dataset>/`.
+3. **Move outputs into place:** put each CSV file in the `csv/` folder of its dataset under `results/`, and each `.pth` file in the folder of its dataset under `checkpoints/`.
 4. **Attacks:** run `attacks/gradient_reconstruction.ipynb` and `attacks/membership_inference.ipynb` against the saved checkpoints.
 5. **Figures:** run the notebooks in `plots/` to redraw the comparison graphs from the CSV files.
 6. **Client dropout:** run `notebooks/client_dropout/client_dropout_recovery.ipynb`.
@@ -257,8 +257,6 @@ The FPMANR journal manuscript is in preparation. Until it is available, please c
   doi       = {10.1109/PECCII70991.2026.11662022}
 }
 ```
-
-GitHub also shows a "Cite this repository" button, which reads `CITATION.cff`.
 
 ---
 
